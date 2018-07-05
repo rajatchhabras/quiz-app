@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Start_Game">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+
+        android:text="Welcome to Quizshalla"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:textColor="#ff0000"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"
+        android:text="HighScore:0"
+        android:textColor="#b22222"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="#e6e6fa"
+        android:text="Exit"
+        android:textColor="#b22222"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginHorizontal="50dp"
+android:layout_centerVertical="true"
+        android:backgroundTint="#e6e6fa"
+        android:text="Start"
+        android:textColor="#b22222"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
