@@ -64,6 +64,16 @@ android:layout_centerVertical="true"
         android:textColor="#b22222"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:text="Score Board"
+        android:textSize="28sp" />
+
 
 
 </RelativeLayout>

@@ -251,6 +251,8 @@ Intent it=new Intent(quiz.this,Start_Game.class);
 int result=score;
 it.putExtra("resultvalue",result);
 it.putExtra("getthis",i);
+it.putExtra("total",totalquestion);
+it.putExtra("attempted",questioncount-1);
 startActivity(it);
 finish();// it will end up our acctivity
     }

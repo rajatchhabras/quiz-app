@@ -15,12 +15,18 @@ import android.widget.Toast;
 
 public class Start_Game extends AppCompatActivity {
 
-    Button start,exit;
+    Button start,exit,scoreboard;
 TextView hscore,scored;
 private  static  int st;
 private int received;
 private  int max;
 private ColorStateList scored_f;
+private int c,i;
+private String score;
+private score_db scoreDb;
+private int total,count;
+private  String change;
+private  double per;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,15 +34,32 @@ private ColorStateList scored_f;
         start=findViewById(R.id.btn);
         hscore=findViewById(R.id.high);
         scored=findViewById(R.id.score);
+        scoreboard=findViewById(R.id.scoreboard);
         exit=findViewById(R.id.button);//linking front end with code
         loadHighscore();
        scored_f=scored.getTextColors();
        // get the score and flag that user has played game for not
 st=getIntent().getIntExtra("resultvalue",0);
 received=getIntent().getIntExtra("getthis",0);
+total=getIntent().getIntExtra("total",0);
+count=getIntent().getIntExtra("attempted",0);
 // it will check that the game is played for not as default is also zero
+        scoreboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it=new Intent(Start_Game.this,scoreboard.class);
+                startActivity(it);
+            }
+        });
+
+
+
+
 if(received==1)
 {
+    change=Integer.toString(st);
+    per=(st/total)*100;
+   // scoreDb.filldb(5,2,"5",45.77954585,7);
     if(st>3)
     {
         // if the score is greater then 3 color will automaically be changed to green else red. ie default.
