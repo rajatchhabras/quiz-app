@@ -14,7 +14,7 @@ import static android.R.layout.expandable_list_content;
 public class scoreboard extends AppCompatActivity {
     ListView listView;
     ArrayAdapter<String> arrayAdapter;
-   List<score_b> datas=new ArrayList<>();
+    List<score_b> datas=new ArrayList<>();
     score_db scoreDb;
     private  score_b cscore;
     private int tlscore,flag=0;
@@ -37,14 +37,14 @@ public class scoreboard extends AppCompatActivity {
     {
 
         datas= scoreDb.getscored();
-            if (!datas.isEmpty()) {
-                cscore = datas.get(count);
-                p ="score is"+cscore.getScore();
-                arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
-                arrayAdapter.add(p);
-                listView.setAdapter(arrayAdapter);
-                count++;
-            }
+        if (!datas.isEmpty()) {
+            cscore = datas.get(count);
+            p ="score is"+cscore.getScore();
+            arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+            arrayAdapter.add(p);
+            listView.setAdapter(arrayAdapter);
+            count++;
+        }
 
         else
         {

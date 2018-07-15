@@ -3,7 +3,7 @@ package com.example.dell.splash_screen;
 public class score_b {
     private int c_answer;
     private int i_answer;
-    private String score;
+    private String score=null;
     private double  precentage;
     private int t_questionss;
 public  score_b(){}
